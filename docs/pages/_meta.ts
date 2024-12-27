@@ -1,16 +1,16 @@
 export default {
   index: {
     type: 'page',
-    title: 'Nextra',
+    title: 'Pantaleone.net',
     display: 'hidden',
     theme: {
       layout: 'raw'
     }
   },
-  docs: {
-    type: 'page',
-    title: 'Documentation'
-  },
+  // docs: {
+  //   type: 'page',
+  //   title: 'Documentation'
+  // },
   versions: {
     type: 'menu',
     title: 'Versions',
@@ -35,24 +35,24 @@ export default {
       typesetting: 'article'
     }
   },
-  showcase: {
-    type: 'page',
-    title: 'Showcase',
-    theme: {
-      typesetting: 'article',
-      layout: 'full',
-      timestamp: false
-    }
-  },
-  sponsors: {
-    type: 'page',
-    title: 'Sponsors',
-    theme: {
-      typesetting: 'article',
-      layout: 'full',
-      timestamp: false
-    }
-  },
+  // showcase: {
+  //   type: 'page',
+  //   title: 'Showcase',
+  //   theme: {
+  //     typesetting: 'article',
+  //     layout: 'full',
+  //     timestamp: false
+  //   }
+  // },
+  // sponsors: {
+  //   type: 'page',
+  //   title: 'Sponsors',
+  //   theme: {
+  //     typesetting: 'article',
+  //     layout: 'full',
+  //     timestamp: false
+  //   }
+  // },
   404: {
     type: 'page',
     theme: {
