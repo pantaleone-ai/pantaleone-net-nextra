@@ -1,8 +1,8 @@
 import { Button, Cards } from 'nextra/components'
-import { Card } from './showcase.mdx'
+
 
 <div className="mb-16 mt-10 text-center">
-  # Sponsors
+  # Projects
   <br />
   <Button
     className="!px-6 hover:!no-underline"
@@ -36,6 +36,19 @@ import { Card } from './showcase.mdx'
     <>![xyflow preview](./showcase/xyflow.jpg)</>
   </Card>
 </Cards>
+
+export const Card = Object.assign(
+  // Copy card component and add default props
+  Cards.Card.bind(),
+  {
+    displayName: 'Card',
+    defaultProps: {
+      arrow: true,
+      target: '_blank',
+      rel: 'noreferrer'
+    }
+  }
+)
 
 <style global jsx>{`
   img {

@@ -7,26 +7,21 @@ export default {
       layout: 'raw'
     }
   },
-  // docs: {
-  //   type: 'page',
-  //   title: 'Documentation'
-  // },
-  versions: {
+
+  shop: {
     type: 'menu',
-    title: 'Versions',
+    title: 'Shop',
     items: {
       2: {
-        title: 'Nextra v2 Docs ↗',
-        href: 'https://nextra-v2-oe0zrpzjp-shud.vercel.app',
-        newWindow: true
+        title: 'Comming Soon ↗',
+        href: '#',
+        newWindow: false
       }
     }
   },
-  blog: {
+  Blog: {
     type: 'page',
-    theme: {
-      typesetting: 'article'
-    }
+    title: 'Blog'
   },
   about: {
     type: 'page',

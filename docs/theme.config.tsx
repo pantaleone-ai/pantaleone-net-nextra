@@ -27,9 +27,9 @@ const config: DocsThemeConfig = {
   //     </div>
   //   )
   // },
-  project: {
-    link: 'https://github.com/pantaleone-ai'
-  },
+  // project: {
+  //   link: 'https://github.com/pantaleone-ai'
+  // },
   docsRepositoryBase: 'https://github.com/pantaleone-ai/pantaleone-net-nextra/tree/main/docs',
   logo,
   head: function useHead() {
