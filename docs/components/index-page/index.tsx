@@ -307,7 +307,7 @@ export const IndexPage = () => (
               <div className={styles.optimization}>
                 <div className="leading-8">
                   <h4>
-                  <code>2. Create solution hypotheses</code>
+                  <code>2. Create solution ideas</code>
                   </h4>                 
                 </div>
               </div>
@@ -357,7 +357,7 @@ export const IndexPage = () => (
               flexDirection: 'column',
               alignItems: 'center',
               justifyContent: 'center',
-              backgroundImage: 'url(/assets/gradient-bg.jpeg)',
+              backgroundImage: 'url(/hero-blue-grad.png)',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               color: '#fff'
@@ -388,9 +388,9 @@ export const IndexPage = () => (
               <Link href="https://mdxjs.com/blog/v3" className="text-current">
                 MDX 3
               </Link>{' '}
-              lets you use Components inside Markdown,{' '}
+              lets you easily customize and manage your experiences{' '}
               <br className="hide-medium" />
-              with huge performance boost since v1.
+              making experience updates as simple as saving a new file.
             </p>
           </Feature>
           <Feature
@@ -461,7 +461,7 @@ export const IndexPage = () => (
                 mixBlendMode: 'difference'
               }}
             >
-              Adaptive to<br />
+              adaptive to<br />
               any <br />
               situation
             </motion.h3>
@@ -473,7 +473,7 @@ export const IndexPage = () => (
             style={{
               color: 'white',
               backgroundImage:
-                'url(/assets/routing.png), url(/assets/gradient-bg.jpeg)',
+                'url(/assets/routing.png), url(/hero-blue-grad.png)',
               backgroundSize: '140%, 180%',
               backgroundPosition: '130px -8px, top',
               backgroundRepeat: 'no-repeat',
@@ -483,8 +483,8 @@ export const IndexPage = () => (
             href="/docs/docs-theme/page-configuration"
           >
             <h3>
-              Organize pages intuitively, <br />
-              with file-system routing from Next.js
+              We create omnichannel experiences <br />
+              that flex to support all contexts.
             </h3>
           </Feature>
         </Features>

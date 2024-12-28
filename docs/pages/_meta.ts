@@ -12,10 +12,10 @@ export default {
     type: 'menu',
     title: 'Shop',
     items: {
-      '-- More': {
-        type: 'separator',
-        title: 'Shop Pantaleone @ Marketplaces'
-      },
+      // '-- More': {
+      //   type: 'separator',
+      //   title: 'Shop Pantaleone @ Marketplaces'
+      // },
       'next.js-link-opensea': {
         title: 'OpenSea ↗',
         href: '#',
