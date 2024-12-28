@@ -461,13 +461,53 @@ export const IndexPage = () => (
                 mixBlendMode: 'difference'
               }}
             >
-              Adaptive to<br />
-              any <br />
-              situation
+              Dark <br />
+              mode <br />
+              included
             </motion.h3>
           </Feature>
           <Feature
             index={6}
+            large
+            id="search-card"
+            href="/docs/docs-theme/theme-configuration#search"
+          >
+            <div style={{ zIndex: 2 }}>
+              <h3>
+                Full-text search, <br />
+                zero-config needed
+              </h3>
+              <p>
+                Nextra indexes your content automatically at build-time and
+                performs incredibly fast full-text search via{' '}
+                <Link href="https://github.com/nextapps-de/flexsearch">
+                  FlexSearch
+                </Link>
+                .
+              </p>
+            </div>
+            <div className="absolute size-full inset-0 hidden sm:block bg-[linear-gradient(to_right,white_250px,_transparent)] dark:bg-[linear-gradient(to_right,#202020_250px,_transparent)] z-[1]" />
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="nextra-focus dark:hidden block"
+            >
+              <source src="/assets/search.mp4" type="video/mp4" />
+            </video>
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="nextra-focus dark:block hidden -translate-x-4"
+            >
+              <source src="/assets/search-dark.mp4" type="video/mp4" />
+            </video>
+          </Feature>
+          <Feature
+            index={7}
             large
             id="fs-card"
             style={{
@@ -486,6 +526,56 @@ export const IndexPage = () => (
               Organize pages intuitively, <br />
               with file-system routing from Next.js
             </h3>
+          </Feature>
+          <Feature
+            index={8}
+            id="a11y-card"
+            style={{
+              backgroundSize: 750,
+              backgroundRepeat: 'no-repeat',
+              minHeight: 288
+            }}
+          >
+            <h3>A11y as a top priority</h3>
+            <p>
+              Nextra respects system options <br className="show-on-mobile" />
+              such as <b>Increase Contrast</b> and <b>Reduce Motion</b>.
+            </p>
+          </Feature>
+          <Feature index={9} href="/docs/guide/ssg">
+            <h3>
+              Hybrid rendering, <br />
+              next generation
+            </h3>
+            <p className="mr-6">
+              You can leverage the hybrid rendering power from Next.js with your
+              Markdown content including{' '}
+              <Link href="https://nextjs.org/docs/basic-features/pages#static-generation-recommended">
+                SSG
+              </Link>
+              ,{' '}
+              <Link href="https://nextjs.org/docs/basic-features/pages#server-side-rendering">
+                SSR
+              </Link>
+              , and{' '}
+              <Link href="https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration">
+                ISR
+              </Link>
+              .
+            </p>
+          </Feature>
+          <Feature index={10} large>
+            <h3>And more...</h3>
+            <p>
+              SEO / RTL Layout / Pluggable Themes / Built-in Components / Last
+              Git Edit Time / Multi-Docs...
+              <br />A lot of new possibilities to be explored.
+            </p>
+            <p className="subtitle">
+              <Link className="no-underline" href="/docs">
+                Start using Nextra →
+              </Link>
+            </p>
           </Feature>
         </Features>
       </div>

@@ -4,7 +4,7 @@ import { Link, useConfig } from 'nextra-theme-docs'
 
 const logo = (
   <>
-    <div className="w-7 h-7 flex items-center justify-center bg-transparent border border-white rounded">
+    <div className="w-6 h-7 flex items-center justify-center bg-transparent border border-white rounded">
       <span className="text-xl font-bold text-white">P</span>
     </div>
     <span aria-label="logo" className="ml-2">pantaleone</span>
@@ -98,10 +98,11 @@ const config: DocsThemeConfig = {
             href="https://rapigent.com?utm_source=pantaleone.net"
           >
             <span>Automated by Rapigent AI Agents</span>
+            
           </a>
         </div>
         <p className="mt-6 text-xs">
-          © {new Date().getFullYear()} Pantaleone.net, all rights reserved.
+       © {new Date().getFullYear()} Pantaleone.net, all rights reserved.
         </p>
       </div>
     )

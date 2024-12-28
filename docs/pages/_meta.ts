@@ -12,10 +12,19 @@ export default {
     type: 'menu',
     title: 'Shop',
     items: {
-      2: {
-        title: 'Comming Soon ↗',
+      '-- More': {
+        type: 'separator',
+        title: 'Shop Pantaleone @ Marketplaces'
+      },
+      'next.js-link-opensea': {
+        title: 'OpenSea ↗',
         href: '#',
-        newWindow: false
+        newWindow: true
+      },
+      'next.js-link-coinbase': {
+        title: 'Coinbase ↗',
+        href: '#',
+        newWindow: true
       }
     }
   },
