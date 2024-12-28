@@ -32,6 +32,14 @@ export default {
     type: 'page',
     title: 'Blog'
   },
+
+  projects: {
+    type: 'page',
+    title: 'Projects',
+    theme: {
+      layout: 'raw'
+    }
+  },
   about: {
     type: 'page',
     title: 'About',

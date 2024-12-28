@@ -76,6 +76,9 @@ const config: DocsThemeConfig = {
       </>
     )
   },
+  darkMode: true,
+  navigation: true,
+
   editLink: {
     content: 'Edit this page on GitHub →'
   },
@@ -86,6 +89,9 @@ const config: DocsThemeConfig = {
   sidebar: {
     defaultMenuCollapseLevel: 1,
     toggleButton: true
+  },
+  search: {
+    placeholder: 'Search pantaleone.net', // Customize your placeholder here
   },
   footer: {
     content: (

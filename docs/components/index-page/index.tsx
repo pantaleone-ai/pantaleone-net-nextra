@@ -70,7 +70,7 @@ export const IndexPage = () => (
       </p>
       <p className="subtitle">
         <Link className={styles.cta} href="/docs">
-          Get started <span>→</span>
+          Download our Free Guide <span>→</span>
         </Link>
       </p>
     </div>
@@ -330,12 +330,12 @@ export const IndexPage = () => (
             href="/docs/guide/syntax-highlighting"
           >
             <h3>
-              Advanced syntax <br className="show-on-mobile" />
-              highlighting solution
+              Workflow automation<br className="show-on-mobile" />
+              powered by n8n and AI agents
             </h3>
             <p>
-              Performant and reliable build-time syntax highlighting powered by{' '}
-              <Link href="https://shiki.style">Shiki</Link>.
+              We use custom workflows developed in n8n, a workflow automation platform that connects seamlessly to your teams and systems. We do the heavy lifting so you don't have to!{' '}
+              <Link href="https://n8n.io" target='_blank'>n8n.io ↗</Link>.
             </p>
           </Feature>
           {/* <Feature index={3} href="/docs/guide/i18n">
