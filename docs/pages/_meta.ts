@@ -11,8 +11,8 @@ export default {
   shop: {
     type: 'page',
     title: 'Shop',
-    'ai': '',
-    'art-nfts': '',
+    // 'ai': '',
+    // 'art-nfts': '',
     'custom-theme': '',
     '-- Shop Pantaleone @ Marketplaces': {
       type: 'separator',
