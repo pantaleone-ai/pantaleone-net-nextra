@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router'
 import type { DocsThemeConfig } from 'nextra-theme-docs'
 import { Link, useConfig } from 'nextra-theme-docs'
+import { Button } from 'nextra/components'
 
 const logo = (
   <>
@@ -105,7 +106,7 @@ const config: DocsThemeConfig = {
 
     <div className="mb-6 flex justify-center space-x-2">
       <a
-        href="#!"
+        href="https://www.facebook.com/pantaleoneNFTs"
         type="button"
         className="rounded-full bg-white p-3 uppercase leading-normal text-surface shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-dark-1 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1 dark:bg-neutral-700 dark:text-white"
         data-twe-ripple-init
@@ -122,7 +123,7 @@ const config: DocsThemeConfig = {
       </a>
 
       <a
-        href="#!"
+        href="https://twitter.com/m_pantaleone"
         type="button"
         className="rounded-full bg-white p-3 uppercase leading-normal text-surface shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-dark-1 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1 dark:bg-neutral-700 dark:text-white"
         data-twe-ripple-init
@@ -139,7 +140,7 @@ const config: DocsThemeConfig = {
       </a>
 
       <a
-        href="#!"
+        href="https://www.instagram.com/pantaleonenet/"
         type="button"
         className="rounded-full bg-white p-3 uppercase leading-normal text-surface shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-dark-1 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1 dark:bg-neutral-700 dark:text-white"
         data-twe-ripple-init
@@ -156,7 +157,7 @@ const config: DocsThemeConfig = {
       </a>
 
       <a
-        href="#!"
+        href="https://www.linkedin.com/in/mattpantaleone/"
         type="button"
         className="rounded-full bg-white p-3 uppercase leading-normal text-surface shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-dark-1 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1 dark:bg-neutral-700 dark:text-white"
         data-twe-ripple-init
@@ -173,11 +174,12 @@ const config: DocsThemeConfig = {
       </a>
 
       <a
-        href="#!"
+        href="https://github.com/pantaleone-ai"
         type="button"
         className="rounded-full bg-white p-3 uppercase leading-normal text-surface shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-dark-1 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1 dark:bg-neutral-700 dark:text-white"
         data-twe-ripple-init
         data-twe-ripple-color="light">
+        
         <span className="mx-auto [&>svg]:h-5 [&>svg]:w-5">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -213,20 +215,23 @@ const config: DocsThemeConfig = {
             </label> */}
           </div>
 
-          <div className="mb-6 md:me-auto">
-            <button
+          <div className="mb-12 md:me-auto">
+            <Button
+              variant="outline"
               type="submit"
-              className="inline-block rounded px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-surface shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-dark-1 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1 dark:bg-neutral-700 dark:text-white"
+              className="inline-block rounded px-6 pb-[6px] pt-2 font-medium leading-normal text-surface shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-dark-1 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1 dark:bg-neutral-700 dark:text-white"
               data-twe-ripple-init
               data-twe-ripple-color="light">
-              Subscribe
-            </button>
+              
+              sign up now
+            </Button>
+            
           </div>
         </div>
       </form>
     </div>
 
-    <div className="grid md:grid-cols-2 lg:grid-cols-4">
+    <div className="grid md:grid-cols-2 lg:grid-cols-2">
       <div className="mb-6">
         <h5 className="mb-2.5 font-bold uppercase">Shop</h5>
 
