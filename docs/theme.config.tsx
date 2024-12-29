@@ -79,6 +79,11 @@ const config: DocsThemeConfig = {
   darkMode: true,
   navigation: true,
 
+  nextThemes: {
+    defaultTheme: 'dark',
+    forcedTheme: 'dark',
+  },
+
   editLink: {
     content: 'Edit this page on GitHub →'
   },

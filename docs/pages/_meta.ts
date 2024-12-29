@@ -9,24 +9,25 @@ export default {
   },
 
   shop: {
-    type: 'menu',
+    type: 'page',
     title: 'Shop',
-    items: {
-      // '-- More': {
-      //   type: 'separator',
-      //   title: 'Shop Pantaleone @ Marketplaces'
-      // },
-      'next.js-link-opensea': {
-        title: 'OpenSea ↗',
-        href: '#',
-        newWindow: true
+    'ai': '',
+    'art-nfts': '',
+    'custom-theme': '',
+    '-- Shop Pantaleone @ Marketplaces': {
+      type: 'separator',
+      title: 'Shop Pantaleone @ Marketplaces'
       },
-      'next.js-link-coinbase': {
-        title: 'Coinbase ↗',
-        href: '#',
-        newWindow: true
+    'next.js-link-opensea': {
+      title: 'OpenSea ↗',
+      href: '#',
+      newWindow: true
+      },
+    'next.js-link-coinbase': {
+      title: 'Coinbase ↗',
+      href: '#',
+      newWindow: true
       }
-    }
   },
   Blog: {
     type: 'page',
