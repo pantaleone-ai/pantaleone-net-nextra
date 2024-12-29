@@ -4,6 +4,10 @@ export default {
     title: 'Pantaleone.net',
     display: 'hidden',
     theme: {
+      breadcrumb: false,
+      footer: true,
+      sidebar: true,
+      toc: true,
       layout: 'raw'
     }
   },
@@ -38,14 +42,16 @@ export default {
     type: 'page',
     title: 'Projects',
     theme: {
-      layout: 'raw'
     }
   },
   about: {
     type: 'page',
     title: 'About',
     theme: {
-      typesetting: 'article'
+      breadcrumb: false,
+      footer: true,
+      sidebar: true,
+      toc: true,
     }
   },
   // showcase: {
