@@ -63,10 +63,7 @@ export const IndexPage = () => (
       <p className="subtitle">
         We help small and medium businesses {' '}
         <br className="max-md:hidden" />
-        run faster with our proporiatary AI-first approach.{' '}
-        {/* <Link href="https://nextjs.org" className="text-current">
-          Next.js
-        </Link> */}
+        run faster with our proporietary AI-first approach.{' '}
       </p>
       <p className="subtitle">
         <Link className={styles.cta} href="/docs">
@@ -284,19 +281,22 @@ export const IndexPage = () => (
           </Feature> */}
           <Feature index={1} centered href="/docs/guide/image">
             <h3>
-              We've delivered more than <br className="show-on-mobile" />
-              <span className="font-extrabold italic">$300 million</span> <br className="show-on-mobile" />
-              to small, medium and global businesses <br className="show-on-mobile" />
+              We help businesses in all industries<br className="show-on-mobile" />
+              increase their performance <br className="show-on-mobile" />
+              <span className="font-extrabold italic">in 3 ways:</span> <br className="show-on-mobile" />
+
             </h3>
             <p className="text-left mb-8">
-              Using our proprietary 3 steps value approach {' '}
-              we'll work with and help your teams deliver amazing.
+              Using our proprietary rapid value approach {' '}
+              built with hundreds of client engagements and successes.
             </p>
             <div>
               <div className={styles.optimization}>
                 <div className="leading-8">
                   <h4>
-                  <code>1. Analyze</code>
+                  <code className="font-extrabold text-lg">1. Automation  <br className="show-on-mobile" /> 
+                  <span className="font-medium text-sm">Your employees and partners are not doing the most important work they should be doing.</span>
+                  </code>
                   </h4>                 
                 </div>
               </div>
@@ -306,9 +306,11 @@ export const IndexPage = () => (
               />
               <div className={styles.optimization}>
                 <div className="leading-8">
-                  <h4>
-                  <code>2. Create solution ideas</code>
-                  </h4>                 
+                <h4>
+                <code className="font-extrabold text-lg">2. AI Strategy  <br className="show-on-mobile" /> 
+                  <span className="font-medium text-sm">Every business is an AI business.  We help you define and scale an AI strategy that works, and that you own and control.</span>
+                  </code>
+                  </h4>                
                 </div>
               </div>
               <ArrowRightIcon
@@ -317,9 +319,12 @@ export const IndexPage = () => (
               />
               <div className={styles.optimization}>
                 <div className="leading-8">
-                  <h4>
-                  <code>3. Agile test, learn & scale</code>
-                  </h4>                 
+                <h4>
+                <code className="font-extrabold text-lg">3. Insourced Operations  <br className="show-on-mobile" /> 
+                  <span className="font-medium text-sm">Reclaim those accelerating agency and consulting fees by bringing important workflows and IP, internally.</span>
+                  </code>
+                  </h4>                
+                
                 </div>
               </div>
             </div>

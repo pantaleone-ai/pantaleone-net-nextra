@@ -205,7 +205,7 @@ const config: DocsThemeConfig = {
           <div className="relative md:mb-6" data-twe-input-wrapper-init>
             <input
               type="email"
-              className="peer block min-h-[auto] focus:ring-0 focus:outline-none w-full rounded border-1 border-black bg-transparent px-3 py-[0.32rem] leading-[1.6] outline transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-white dark:placeholder:text-neutral-300 dark:autofill:shadow-autofill dark:peer-focus:text-primary [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0"
+              className="peer block min-h-[auto] focus:ring-0 focus: w-full rounded border-1 border-gray-500 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-white dark:placeholder:text-neutral-300 dark:autofill:shadow-autofill dark:peer-focus:text-primary dark:border-gray-400 [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0"
               id="exampleFormControlInputEmail"
               placeholder="Email address" />
             {/* <label
@@ -231,11 +231,11 @@ const config: DocsThemeConfig = {
       </form>
     </div>
 
-    <div className="mt-6 grid md:grid-cols-2 lg:grid-cols-2">
+    <div className="mt-6 grid md:grid-cols-2 lg:grid-cols-2 text-xs">
       <div className="mb-6">
-        <h5 className="mb-2.5 font-bold uppercase">Shop</h5>
+        <h5 className="mb-2.5 font-medium uppercase">Shop Pantaleone.net</h5>
 
-        <ul className="mb-0 list-none text-sm">
+        <ul className="mb-0 list-none">
           <li>
             <a href="#!">AI Agents</a>
           </li>
@@ -252,9 +252,9 @@ const config: DocsThemeConfig = {
       </div>
 
       <div className="mb-6">
-        <h5 className="mb-2.5 font-bold uppercase">Popular Articles</h5>
+        <h5 className="mb-2.5 font-medium uppercase">Popular Articles</h5>
 
-        <ul className="mb-0 list-none text-sm">
+        <ul className="mb-0 list-none text-xs">
           <li>
             <a href="#!">AI Agents</a>
           </li>

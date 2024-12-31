@@ -27,29 +27,27 @@ export default {
         title: 'Artwork & NFTs',
         href: '/art-nfts'
       },
-    // '--- Shop Pantaleone @ Marketplaces': {
-    //   type: 'separator',
-    //   title: 'Shop Pantaleone @ Marketplaces'
-    //   }
-    // 'next.js-link-opensea': {
-    //   title: 'OpenSea ↗',
-    //   type: 'page',
-    //   href: '#',
-    //   newWindow: true
-    //   },
-    // 'next.js-link-coinbase': {
-    //   title: 'Coinbase ↗',
-    //   type: 'page',
-    //   href: '#',
-    //   newWindow: true
-    //   }
     }
   },
   Blog: {
-    type: 'page',
-    title: 'Blog'
+    type: 'menu',
+    title: 'Blog',
+    items: {
+      blogindex: {
+        title: 'Latest Writings',
+        href: '/blog'
+      },
+      topics: {
+        title: 'Blog Topics & Tags',
+        href: '/blog/tags'
+      },
+      rss: {
+        title: 'Article RSS Feed ↗',
+        href: '/rss.xml',
+        newWindow: true
+      },
+    }
   },
-
   projects: {
     type: 'page',
     title: 'Projects',
@@ -63,7 +61,7 @@ export default {
       breadcrumb: false,
       footer: true,
       sidebar: true,
-      toc: true,
+      toc: true
     }
   },
   404: {
@@ -72,5 +70,9 @@ export default {
       timestamp: false,
       typesetting: 'article'
     }
+  },
+  blog: {
+    type: 'page',
+    display: 'hidden'
   }
 }
