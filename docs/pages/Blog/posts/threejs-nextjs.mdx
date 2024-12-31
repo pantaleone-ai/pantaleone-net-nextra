@@ -1,0 +1,133 @@
+---
+title: Integrating Three.js into Next.js A Guide with Sample Code
+date: 2024/1/25
+description: ThreeJS, when combined with Next.js can open up exciting possibilities for building interactive and immersive web applications
+tag: javascript, code, creative, programming, nextjs, threejs
+author: Matt Pantaleone
+---
+
+# threejs
+
+## Three.js, a popular JavaScript library, empowers developers to create stunning 3D graphics on the web effortlessly. 
+
+When combined with Next.js, a React-based framework, it opens up exciting possibilities for building interactive and immersive web applications. In this article, we'll explore the integration of Three.js into a Next.js project and provide a simple example to get you started.
+
+### Getting Started with Three.js and Next.js
+
+#### 1. Create a Next.js Project
+
+```bash filename="Bash"
+npx create-next-app my-threejs-next-app
+cd my-threejs-next-app
+```
+
+#### 2. Install Three.js
+
+```bash filename="Bash"
+npm install three
+```
+
+#### 3. Create a Three.js Component
+
+In your project, create a new file named ThreeScene.js. This will be your Three.js component.
+
+```js filename="JavaScript"
+// ThreeScene.js
+import React, { useEffect } from 'react';
+import * as THREE from 'three';
+
+const ThreeScene = () => {
+  useEffect(() => {
+    // Set up Three.js scene
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer();
+    
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.getElementById('three-container').appendChild(renderer.domElement);
+
+    // Create a simple cube
+    const geometry = new THREE.BoxGeometry();
+    const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+    const cube = new THREE.Mesh(geometry, material);
+
+    // Add cube to the scene
+    scene.add(cube);
+
+    // Position the camera
+    camera.position.z = 5;
+
+    // Animation loop
+    const animate = () => {
+      requestAnimationFrame(animate);
+
+      // Rotate the cube
+      cube.rotation.x += 0.01;
+      cube.rotation.y += 0.01;
+
+      // Render the scene
+      renderer.render(scene, camera);
+    };
+
+    // Start animation loop
+    animate();
+
+    // Handle window resize
+    const handleResize = () => {
+      const newWidth = window.innerWidth;
+      const newHeight = window.innerHeight;
+
+      camera.aspect = newWidth / newHeight;
+      camera.updateProjectionMatrix();
+
+      renderer.setSize(newWidth, newHeight);
+    };
+
+    // Event listener for window resize
+    window.addEventListener('resize', handleResize);
+
+    // Clean up Three.js scene on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+      // additional cleanup if needed
+    };
+  }, []); // Empty dependency array ensures the useEffect runs once on mount
+
+  return <div id="three-container" />;
+};
+
+export default ThreeScene;
+```
+
+#### 4. Use the Three.js Component in a Next.js Page
+
+Now, import and use the ThreeScene component in your Next.js page. For example, in pages/index.js:
+
+```js filename="JavaScript"
+// pages/index.js
+import React from 'react';
+import ThreeScene from '../components/ThreeScene';
+
+const Home = () => {
+  return (
+    <div>
+      <h1>My Three.js Next.js App</h1>
+      <ThreeScene />
+    </div>
+  );
+};
+
+export default Home;
+```
+
+#### 5. Finally, run Your Next.js App
+
+Now, import and use the ThreeScene component in your Next.js page. For example, in pages/index.js:
+
+```bash filename="Bash"
+npm run dev
+```
+
+Visit http://localhost:3000 in your browser, and you should see a rotating cube – your first Three.js integration with Next.js!
+
+More on threejs here [https://threejs.org/](https://threejs.org/)

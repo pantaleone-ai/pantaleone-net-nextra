@@ -1,0 +1,103 @@
+---
+title: Getting Started with Next.js - A Powerful Framework for React
+date: 2024/1/26
+description: Next.js is a React framework that enables developers to build server-rendered React applications easily
+tag: javascript, code, creative, programming, nextjs, webgl, threejs
+author: Matt Pantaleone
+---
+
+# nextjs
+
+## What is NextJS
+
+Next.js is a React framework that enables developers to build server-rendered React applications easily. Developed by Vercel, Next.js aims to make React applications more scalable by providing a structured and opinionated setup. It introduces server-side rendering (SSR) and static site generation (SSG) out of the box, enhancing performance and search engine optimization (SEO).
+
+### Key Features of NextJS
+
+#### 1. Server-Side Rendering (SSR)
+
+Next.js allows you to render React components on the server side before sending them to the client, resulting in faster initial page loads and improved performance.
+
+#### 2. Static Site Generation (SSG)
+
+With Next.js, you can pre-render pages at build time, generating static HTML files. This is beneficial for content-heavy websites, ensuring fast loading times and reducing server load.
+
+#### 3. Automatic Code Splitting
+ 
+Next.js automatically splits your code into smaller chunks, loading only what is necessary for a particular page. This results in optimized performance, especially for larger applications.
+
+#### 4. API Routes
+
+Easily create API endpoints within your Next.js application, simplifying backend integration and enhancing the overall development workflow.
+
+#### 5. Hot Module Replacement (HMR)
+
+Enjoy a fast development experience with HMR, which allows you to see the changes in real-time without a full page reload.
+
+#### 6. Built-in CSS Support
+
+Next.js supports CSS, CSS Modules, and various other styling solutions out of the box. You can choose the styling approach that best fits your project requirements.
+
+#### 7. Zero Configuration 
+
+Get started quickly with Next.js without the need for complex configurations. The framework provides sensible defaults while allowing for customization when needed.
+
+## Getting Started with Next.js:
+
+Now that we've highlighted some of the key features of Next.js, let's guide you through the process of getting started quickly.
+
+#### 1. Install Next.js
+
+To create a new Next.js application, you need to have Node.js installed. Open your terminal and run the following commands
+
+```bash filename="Bash"
+npx create-next-app my-next-app
+cd my-next-app
+```
+
+#### 2. Run Your Next.js Application
+
+Once the installation is complete, you can start your Next.js development server by running
+
+```bash filename="Bash"
+npm run dev
+```
+
+This command starts the development server, and you can view your application by navigating to http://localhost:3000 in your browser.
+
+#### 3. Explore Pages and Components
+
+Next.js follows a convention-based approach for organizing your project. The "pages" directory contains your application's pages. Each JavaScript or TypeScript file in this directory represents a page. Explore the "pages/index.js" file to see your application's default home page.
+
+Feel free to create additional pages and components to structure your application. As you add files to the "pages" directory, Next.js will automatically handle routing for you.
+
+#### 4. Utilize Dynamic Routes
+
+Next.js allows you to create dynamic routes easily. For example, if you want to create a dynamic blog page with slugs, you can create a file named "[slug].js" inside the "pages/blog" directory. The square brackets indicate a dynamic parameter.
+
+```js filename="JavaScript"
+// pages/blog/[slug].js
+import { useRouter } from 'next/router';
+
+const BlogPost = () => {
+  const router = useRouter();
+  const { slug } = router.query;
+
+  return (
+    <div>
+      <h1>{slug}</h1>
+      {/* Add your blog post content here */}
+    </div>
+  );
+};
+
+export default BlogPost;
+```
+
+#### 5. Deploy Your Next.js Application
+
+Vercel, the company behind Next.js, provides seamless deployment for Next.js applications. You can deploy your application to Vercel by linking your project to their platform. Follow the instructions provided during the deployment process, and your application will be live in no time.
+
+More on NextJS here [https://nextjs.org/](https://nextjs.org/)
+
+Vercel [https://vercel.com/](https://vercel.com/)

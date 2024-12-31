@@ -215,7 +215,7 @@ const config: DocsThemeConfig = {
             </label> */}
           </div>
 
-          <div className="mb-12 md:me-auto">
+          <div className="mb-6 md:me-auto">
             <Button
               variant="outline"
               type="submit"
@@ -231,11 +231,11 @@ const config: DocsThemeConfig = {
       </form>
     </div>
 
-    <div className="grid md:grid-cols-2 lg:grid-cols-2">
+    <div className="mt-6 grid md:grid-cols-2 lg:grid-cols-2">
       <div className="mb-6">
         <h5 className="mb-2.5 font-bold uppercase">Shop</h5>
 
-        <ul className="mb-0 list-none">
+        <ul className="mb-0 list-none text-sm">
           <li>
             <a href="#!">AI Agents</a>
           </li>
@@ -252,9 +252,9 @@ const config: DocsThemeConfig = {
       </div>
 
       <div className="mb-6">
-        <h5 className="mb-2.5 font-bold uppercase">Article Tags</h5>
+        <h5 className="mb-2.5 font-bold uppercase">Popular Articles</h5>
 
-        <ul className="mb-0 list-none">
+        <ul className="mb-0 list-none text-sm">
           <li>
             <a href="#!">AI Agents</a>
           </li>

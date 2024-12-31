@@ -1,0 +1,110 @@
+---
+title: Creating abstract graphics with WebGL - Code Samples
+date: 2024/1/27
+description: Creating abstract graphics with WebGL involves manipulating vertices, colors, and shaders to produce unique and visually appealing visualizations.
+tag: javascript, code, creative, programming, nextjs, webgl, threejs
+author: Matt Pantaleone
+---
+
+# webgl-examples
+
+Below are two code samples using Three.js to create abstract WebGL graphics. These examples are simplified for demonstration purposes, and you can further customize and expand upon them based on your creative vision.
+
+### 1. WebGL + ThreeJS Animated Waves
+
+```jsx filename="JavaScript"
+import { useRef, useEffect } from 'react';
+import * as THREE from 'three';
+
+const Waves = () => {
+  const canvasRef = useRef();
+
+  useEffect(() => {
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer({ canvas: canvasRef.current });
+
+    const geometry = new THREE.PlaneGeometry(200, 200, 40, 40);
+    const material = new THREE.MeshPhongMaterial({ color: 0x156289, emissive: 0x072534, side: THREE.DoubleSide, flatShading: true });
+    const plane = new THREE.Mesh(geometry, material);
+    scene.add(plane);
+
+    camera.position.z = 100;
+
+    const animate = () => {
+      requestAnimationFrame(animate);
+
+      const time = Date.now() * 0.001;
+      const vertices = plane.geometry.attributes.position.array;
+
+      for (let i = 0; i < vertices.length; i += 3) {
+        vertices[i + 2] = Math.sin(i * 0.1 + time) * 10;
+      }
+
+      plane.geometry.attributes.position.needsUpdate = true;
+
+      renderer.render(scene, camera);
+    };
+
+    animate();
+  }, []);
+
+  return <canvas ref={canvasRef} />;
+};
+
+export default Waves;
+```
+
+#### 2. WebGL + ThreeJS Particle System
+
+```jsx filename="JavaScript"
+import { useRef, useEffect } from 'react';
+import * as THREE from 'three';
+
+const ParticleSystem = () => {
+  const canvasRef = useRef();
+
+  useEffect(() => {
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer({ canvas: canvasRef.current });
+
+    const particles = new THREE.BufferGeometry();
+    const particleCount = 10000;
+
+    const positions = new Float32Array(particleCount * 3);
+
+    for (let i = 0; i < particleCount * 3; i++) {
+      positions[i] = (Math.random() - 0.5) * 200;
+    }
+
+    particles.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+
+    const material = new THREE.PointsMaterial({ color: 0xFFFFFF, size: 0.1 });
+
+    const particleSystem = new THREE.Points(particles, material);
+    scene.add(particleSystem);
+
+    camera.position.z = 50;
+
+    const animate = () => {
+      requestAnimationFrame(animate);
+
+      particleSystem.rotation.x += 0.001;
+      particleSystem.rotation.y += 0.001;
+
+      renderer.render(scene, camera);
+    };
+
+    animate();
+  }, []);
+
+  return <canvas ref={canvasRef} />;
+};
+
+export default ParticleSystem;
+```
+
+Feel free to experiment with these examples and explore the vast capabilities of WebGL. Adjust parameters, add more shapes, and incorporate shaders to create even more abstract and visually striking graphics in your Next.js app.
+
+More on WebGL here [https://www.khronos.org/webgl/](https://www.khronos.org/webgl/)

@@ -1,24 +1,19 @@
 export default {
-  index: '',
-  // guide: '',
-  // '-- Themes': {
+  // index: '',
+  // '-- Shop Pantaleone @ Marketplaces': {
   //   type: 'separator',
-  //   title: 'Themes'
+  //   title: 'Shop Pantaleone @ Marketplaces'
   // },
-  // 'docs-theme': '',
-  // 'blog-theme': '',
-  // 'custom-theme': '',
-  // '-- More': {
-  //   type: 'separator',
-  //   title: 'More'
+  // 'next.js-linkos': {
+  //   title: 'OpenSea ↗',
+  //   type: 'page',
+  //   href: 'https://opensea.com',
+  //   newWindow: true
   // },
-  // 'about-link': {
-  //   title: 'About Nextra',
-  //   href: '/about'
-  // },
-  // 'next.js-link': {
-  //   title: 'Next.js Docs ↗',
-  //   href: 'https://nextjs.org?utm_source=nextra.site&utm_medium=referral&utm_campaign=sidebar',
+  // 'next.js-linkbase': {
+  //   title: 'Coinbase ↗',
+  //   type: 'page',
+  //   href: 'https://coinbase.com',
   //   newWindow: true
   // }
 }
