@@ -14,6 +14,13 @@ export default {
   shop: {
     title: 'Shop',
     type: 'menu',
+    theme: {
+      breadcrumb: true,
+      footer: true,
+      sidebar: true,
+      toc: true,
+      layout: 'article'
+    },
     items: {
       aiagents: {
         title: 'AI Agents',
@@ -32,6 +39,13 @@ export default {
   Blog: {
     type: 'menu',
     title: 'Blog',
+    theme: {
+      breadcrumb: true,
+      footer: true,
+      sidebar: true,
+      toc: true,
+      layout: 'article'
+    },
     items: {
       blogindex: {
         title: 'Latest Writings',
@@ -52,27 +66,31 @@ export default {
     type: 'page',
     title: 'Projects',
     theme: {
+      breadcrumb: true,
+      footer: true,
+      sidebar: true,
+      toc: true,
     }
   },
   about: {
     type: 'page',
-    title: 'About',
+    title: 'About Us',
     theme: {
-      breadcrumb: false,
+      breadcrumb: true,
       footer: true,
       sidebar: true,
-      toc: true
+      toc: true,
+      timestamp: true,
     }
   },
   404: {
     type: 'page',
     theme: {
       timestamp: false,
-      typesetting: 'article'
     }
   },
-  blog: {
-    type: 'page',
-    display: 'hidden'
-  }
+  // blog: {
+  //   type: 'page',
+  //   display: 'hidden'
+  // }
 }
