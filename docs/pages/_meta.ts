@@ -48,7 +48,7 @@ export default {
     },
     items: {
       blogindex: {
-        title: 'Latest Writings',
+        title: 'Latest Articles',
         href: '/blog'
       },
       topics: {
@@ -56,7 +56,7 @@ export default {
         href: '/blog/tags'
       },
       rss: {
-        title: 'Article RSS Feed ↗',
+        title: 'RSS Feed ↗',
         href: '/rss.xml',
         newWindow: true
       },
