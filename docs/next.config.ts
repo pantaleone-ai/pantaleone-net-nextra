@@ -23,21 +23,11 @@ export default withNextra({
     ignoreDuringBuilds: true
   },
   redirects: async () => [
-    // {
-    //   source: '/docs/guide/:slug(typescript|latex|tailwind-css|mermaid)',
-    //   destination: '/docs/guide/advanced/:slug',
-    //   permanent: true
-    // },
-    // {
-    //   source: '/docs/docs-theme/built-ins/:slug(callout|steps|tabs)',
-    //   destination: '/docs/guide/built-ins/:slug',
-    //   permanent: true
-    // },
-    // {
-    //   source: '/docs/docs-theme/api/use-config',
-    //   destination: '/docs/docs-theme/api',
-    //   permanent: true
-    // }
+    {
+      source: '/blog',
+      destination: '/blog/index.mdx',
+      permanent: true
+    }
   ],
   webpack(config) {
     const fileLoaderRule = config.module.rules.find(rule =>
