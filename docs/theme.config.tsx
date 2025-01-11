@@ -38,13 +38,13 @@ const config: DocsThemeConfig = {
     const { route } = useRouter()
     const isDefault = route === '/' || !config.title
     const image =
-      'https://nextra.site/' +
+      'https://pantaleone.net/' +
       (isDefault ? 'og.jpeg' : `/og?title=${config.title}`)
 
     const description =
       config.frontMatter.description ||
-      'Make beautiful websites with Next.js & MDX.'
-    const title = config.title + (route === '/' ? '' : ' - Nextra')
+      'The latest in AI-enabled art, design, workflow and business'
+    const title = config.title + (route === '/' ? '' : ' - Pantaleone.net')
 
     return (
       <>
@@ -54,12 +54,12 @@ const config: DocsThemeConfig = {
         <meta property="og:description" content={description} />
         <meta property="og:image" content={image} />
 
-        <meta name="msapplication-TileColor" content="#fff" />
+        <meta name="msapplication-TileColor" content="#000" />
         <meta httpEquiv="Content-Language" content="en" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site:domain" content="nextra.site" />
-        <meta name="twitter:url" content="https://nextra.site" />
-        <meta name="apple-mobile-web-app-title" content="Nextra" />
+        <meta name="twitter:url" content="Pantaleone.net" />
+        <meta name="apple-mobile-web-app-title" content="Pantaleone.net" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="icon" href="/favicon.png" type="image/png" />
         <link
@@ -88,16 +88,16 @@ const config: DocsThemeConfig = {
   editLink: {
     content: 'Edit this page on GitHub →'
   },
-  feedback: {
-    content: 'Question? Give us feedback →',
-    labels: 'feedback'
-  },
+  // feedback: {
+  //   content: 'Question? Give us feedback →',
+  //   labels: 'feedback'
+  // },
   sidebar: {
     defaultMenuCollapseLevel: 1,
     toggleButton: true
   },
   search: {
-    placeholder: 'Search pantaleone.net', // Customize your placeholder here
+    placeholder: 'Search pantaleone.net', // Customize your search text placeholder here
   },
   footer: {
     content: (
@@ -194,9 +194,8 @@ const config: DocsThemeConfig = {
 
     <div>
       <form action="">
-        <div
-          className="gird-cols-1 grid items-center justify-center gap-4 md:grid-cols-3">
-          <div className="md:mb-6 md:ms-auto">
+        <div className="gird-cols-1 grid items-center justify-center gap-4 md:grid-cols-3">
+          {/* <div className="md:mb-6 md:ms-auto">
             <p>
               <strong>Stay updated with our AI newsletter</strong>
             </p>
@@ -208,14 +207,10 @@ const config: DocsThemeConfig = {
               className="peer block min-h-[auto] focus:ring-0 focus: w-full rounded border-1 border-gray-500 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-white dark:placeholder:text-neutral-300 dark:autofill:shadow-autofill dark:peer-focus:text-primary dark:border-gray-400 [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0"
               id="exampleFormControlInputEmail"
               placeholder="Email address" />
-            {/* <label
-              id="exampleFormControlInputEmail"
-              className="pointer-events-none focus:ring-0 focus:outline-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[twe-input-state-active]:-translate-y-[0.9rem] peer-data-[twe-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-400 dark:peer-focus:text-primary"
-              >Email address
-            </label> */}
-          </div>
 
-          <div className="mb-6 md:me-auto">
+          </div> */}
+
+          {/* <div className="mb-6 md:me-auto">
             <Button
               variant="outline"
               type="submit"
@@ -226,13 +221,13 @@ const config: DocsThemeConfig = {
               sign up now
             </Button>
             
-          </div>
+          </div> */}
         </div>
       </form>
     </div>
 
     <div className="mt-6 grid md:grid-cols-2 lg:grid-cols-2 text-xs">
-      <div className="mb-6">
+      {/* <div className="mb-6">
         <h5 className="mb-2.5 font-medium uppercase">Shop Pantaleone.net</h5>
 
         <ul className="mb-0 list-none">
@@ -268,7 +263,7 @@ const config: DocsThemeConfig = {
             <a href="#!">Crypto & Blockchain</a>
           </li>
         </ul>
-      </div>
+      </div> */}
     </div>
   </div>
 

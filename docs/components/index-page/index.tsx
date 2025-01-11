@@ -57,17 +57,17 @@ export const IndexPage = () => (
   <div className="home-content">
     <div className="content-container">
       <h1 className="headline">
-        Let's modernize <br className="sm:block hidden" />
-        your business with AI
+        We create amazing <br className="sm:block hidden" />
+        experiences with AI
       </h1>
       <p className="subtitle">
-        We help small and medium businesses {' '}
+        With 20+ years of AI experience, {' '}
         <br className="max-md:hidden" />
-        run faster with our proporietary AI-first approach.{' '}
+        pantaleone helps teams automate and ship high converting experiences. Faster.{' '}
       </p>
       <p className="subtitle">
         <Link className={styles.cta} href="/docs">
-          Download our Free Guide <span>→</span>
+          Take a look at what we can do <span>→</span>
         </Link>
       </p>
     </div>
@@ -279,7 +279,26 @@ export const IndexPage = () => (
               in minutes
             </h3>
           </Feature> */}
-          <Feature index={1} centered href="/docs/guide/image">
+          {/* <Feature
+              index={0}
+              large
+              centered
+              id="docs-card"
+              href="/docs/docs-theme/start"
+            >
+              <Image src={docsCard} alt="Background" loading="eager" />
+              <Image
+                src={docsCardDark}
+                alt="Background (Dark)"
+                loading="eager"
+              />
+              <h3>
+                Full-power documentation <br className="show-on-mobile" />
+                in minutes
+              </h3>
+            </Feature> */}
+          
+          {/* <Feature index={1} centered href="/docs/guide/image">
             <h3>
               We help businesses in all industries<br className="show-on-mobile" />
               increase their performance <br className="show-on-mobile" />
@@ -295,7 +314,7 @@ export const IndexPage = () => (
                 <div className="leading-8">
                   <h4>
                   <code className="font-extrabold text-lg">1. Automation  <br className="show-on-mobile" /> 
-                  <span className="font-medium text-sm">Your employees and partners are not doing the most important work they should be doing.</span>
+                  <span className="font-medium text-sm">Your employees are not doing their most important work.</span>
                   </code>
                   </h4>                 
                 </div>
@@ -308,7 +327,7 @@ export const IndexPage = () => (
                 <div className="leading-8">
                 <h4>
                 <code className="font-extrabold text-lg">2. AI Strategy  <br className="show-on-mobile" /> 
-                  <span className="font-medium text-sm">Every business is an AI business.  We help you define and scale an AI strategy that works, and that you own and control.</span>
+                  <span className="font-medium text-sm">Every business is an AI business.  We help define and scale an AI strategy that works - that you own and control.</span>
                   </code>
                   </h4>                
                 </div>
@@ -321,15 +340,15 @@ export const IndexPage = () => (
                 <div className="leading-8">
                 <h4>
                 <code className="font-extrabold text-lg">3. Insourced Operations  <br className="show-on-mobile" /> 
-                  <span className="font-medium text-sm">Reclaim those accelerating agency and consulting fees by bringing important workflows and IP, internally.</span>
+                  <span className="font-medium text-sm">Reclaim accelerating agency and consulting fees by bringing important work internally.</span>
                   </code>
                   </h4>                
                 
                 </div>
               </div>
             </div>
-          </Feature>
-          <Feature
+          </Feature> */}
+          {/* <Feature
             index={2}
             id="highlighting-card"
             href="/docs/guide/syntax-highlighting"
@@ -342,7 +361,7 @@ export const IndexPage = () => (
               We use custom workflows developed in n8n, a workflow automation platform that connects seamlessly to your teams and systems. We do the heavy lifting so you don't have to!{' '}
               <Link href="https://n8n.io" target='_blank'>n8n.io ↗</Link>.
             </p>
-          </Feature>
+          </Feature> */}
           {/* <Feature index={3} href="/docs/guide/i18n">
             <h3>
               I18n as easy as <br className="show-on-mobile" />
@@ -390,12 +409,9 @@ export const IndexPage = () => (
                 textShadow: '0 2px 4px rgb(0 0 0 / 20%)'
               }}
             >
-              <Link href="https://mdxjs.com/blog/v3" className="text-current">
-                MDX 3
-              </Link>{' '}
-              lets you easily customize and manage your experiences{' '}
+              Pantaleone uses MDX to let you easily customize your experiences.{' '}
               <br className="hide-medium" />
-              making experience updates as simple as saving a new file.
+              Updates are as simple as saving a new file.
             </p>
           </Feature>
           <Feature
@@ -488,8 +504,8 @@ export const IndexPage = () => (
             href="/docs/docs-theme/page-configuration"
           >
             <h3>
-              We create omnichannel experiences <br />
-              that flex to support all contexts.
+              We create experiences that<br />
+              scale to support your customers needs.
             </h3>
           </Feature>
         </Features>

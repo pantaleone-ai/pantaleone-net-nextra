@@ -11,67 +11,67 @@ export default {
       layout: 'raw'
     }
   },
-  shop: {
-    title: 'Shop',
-    type: 'menu',
-    theme: {
-      breadcrumb: true,
-      footer: true,
-      sidebar: true,
-      toc: true,
-      layout: 'article'
-    },
-    items: {
-      aiagents: {
-        title: 'AI Agents',
-        href: '/shop/ai'
-      },
-      aiworkflows: {
-        title: 'AI Workflows',
-        href: '/ai-workflows'
-      },
-      art: {
-        title: 'Artwork & NFTs',
-        href: '/art-nfts'
-      },
-    }
-  },
-  Blog: {
-    type: 'menu',
-    title: 'Blog',
-    theme: {
-      breadcrumb: true,
-      footer: true,
-      sidebar: true,
-      toc: true,
-      layout: 'article'
-    },
-    items: {
-      blogindex: {
-        title: 'Latest Articles',
-        href: '/blog'
-      },
-      topics: {
-        title: 'Blog Topics & Tags',
-        href: '/blog/tags'
-      },
-      rss: {
-        title: 'RSS Feed ↗',
-        href: '/rss.xml',
-        newWindow: true
-      },
-    }
-  },
-  projects: {
-    type: 'page',
-    title: 'Projects',
-    theme: {
-      breadcrumb: true,
-      footer: true,
-      sidebar: true,
-      toc: true,
-    }
-  },
+  // shop: {
+  //   title: 'Shop',
+  //   type: 'menu',
+  //   theme: {
+  //     breadcrumb: true,
+  //     footer: true,
+  //     sidebar: true,
+  //     toc: true,
+  //     layout: 'article'
+  //   },
+  //   items: {
+  //     aiagents: {
+  //       title: 'AI Agents',
+  //       href: '/shop/ai'
+  //     },
+  //     aiworkflows: {
+  //       title: 'AI Workflows',
+  //       href: '/ai-workflows'
+  //     },
+  //     art: {
+  //       title: 'Artwork & NFTs',
+  //       href: '/art-nfts'
+  //     },
+  //   },
+  // },
+  // Blog: {
+  //   type: 'menu',
+  //   title: 'Blog',
+  //   theme: {
+  //     breadcrumb: true,
+  //     footer: true,
+  //     sidebar: true,
+  //     toc: true,
+  //     layout: 'article'
+  //   },
+  //   items: {
+  //     blogindex: {
+  //       title: 'Latest Articles',
+  //       href: '/blog'
+  //     },
+  //     topics: {
+  //       title: 'Blog Topics & Tags',
+  //       href: '/blog/tags'
+  //     },
+  //     rss: {
+  //       title: 'RSS Feed ↗',
+  //       href: '/rss.xml',
+  //       newWindow: true
+  //     },
+  //   }
+  // },
+  // projects: {
+  //   type: 'page',
+  //   title: 'Projects',
+  //   theme: {
+  //     breadcrumb: true,
+  //     footer: true,
+  //     sidebar: true,
+  //     toc: true,
+  //   }
+  // },
   about: {
     type: 'page',
     title: 'About Us',
