@@ -51,15 +51,15 @@ export default {
         title: 'Latest Articles',
         href: '/blog'
       },
-      topics: {
-        title: 'Blog Topics & Tags',
-        href: '/blog/tags'
-      },
-      rss: {
-        title: 'RSS Feed ↗',
-        href: '/rss.xml',
-        newWindow: true
-      },
+      // topics: {
+      //   title: 'Blog Topics & Tags',
+      //   href: '/blog/tags'
+      // },
+      // rss: {
+      //   title: 'RSS Feed ↗',
+      //   href: '/rss.xml',
+      //   newWindow: true
+      // },
     }
   },
   // projects: {
