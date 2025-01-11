@@ -36,32 +36,32 @@ export default {
   //     },
   //   },
   // },
-  // Blog: {
-  //   type: 'menu',
-  //   title: 'Blog',
-  //   theme: {
-  //     breadcrumb: true,
-  //     footer: true,
-  //     sidebar: true,
-  //     toc: true,
-  //     layout: 'article'
-  //   },
-  //   items: {
-  //     blogindex: {
-  //       title: 'Latest Articles',
-  //       href: '/blog'
-  //     },
-  //     topics: {
-  //       title: 'Blog Topics & Tags',
-  //       href: '/blog/tags'
-  //     },
-  //     rss: {
-  //       title: 'RSS Feed ↗',
-  //       href: '/rss.xml',
-  //       newWindow: true
-  //     },
-  //   }
-  // },
+  Blog: {
+    type: 'menu',
+    title: 'Blog',
+    theme: {
+      breadcrumb: true,
+      footer: true,
+      sidebar: true,
+      toc: true,
+      layout: 'article'
+    },
+    items: {
+      blogindex: {
+        title: 'Latest Articles',
+        href: '/blog'
+      },
+      topics: {
+        title: 'Blog Topics & Tags',
+        href: '/blog/tags'
+      },
+      rss: {
+        title: 'RSS Feed ↗',
+        href: '/rss.xml',
+        newWindow: true
+      },
+    }
+  },
   // projects: {
   //   type: 'page',
   //   title: 'Projects',
