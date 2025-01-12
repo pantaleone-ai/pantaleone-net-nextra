@@ -37,7 +37,7 @@ const config: DocsThemeConfig = {
     const config = useConfig()
     const { route } = useRouter()
     const isDefault = route === '/' || !config.title
-    const image = '/android-chrome-512x512.png'
+    const image = 'https://pantaleone.vercel.app/android-chrome-512x512.png'
     const description =
       config.frontMatter.description ||
       'The latest in AI-enabled art, design, workflow and business'
@@ -60,6 +60,7 @@ const config: DocsThemeConfig = {
         <meta name="twitter:site:domain" content="Pantaleone.net" />
         <meta name="twitter:url" content="https://pantaleone.net" />
         <meta property="twitter:card" content={image} />
+        <meta property="twitter:image" content={image} />
         <meta name="apple-mobile-web-app-title" content="Pantaleone.net" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="icon" href="/favicon.png" type="image/png" />
