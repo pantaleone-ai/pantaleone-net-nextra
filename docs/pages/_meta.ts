@@ -9,68 +9,8 @@ export default {
       sidebar: true,
       toc: true,
       layout: 'raw'
-    },
+    }
   },
-  // shop: {
-  //   title: 'Shop',
-  //   type: 'menu',
-  //   theme: {
-  //     breadcrumb: true,
-  //     footer: true,
-  //     sidebar: true,
-  //     toc: true,
-  //     layout: 'article'
-  //   },
-  //   items: {
-  //     aiagents: {
-  //       title: 'AI Agents',
-  //       href: '/shop/ai'
-  //     },
-  //     aiworkflows: {
-  //       title: 'AI Workflows',
-  //       href: '/ai-workflows'
-  //     },
-  //     art: {
-  //       title: 'Artwork & NFTs',
-  //       href: '/art-nfts'
-  //     },
-  //   },
-  // },
-  blog: {
-    title: 'Blog',
-    // theme: {
-    //   breadcrumb: true,
-    //   footer: true,
-    //   sidebar: true,
-    //   layout: 'article'
-    // }
-  },
-  //   items: {
-  //     blogindex: {
-  //       title: 'Latest Articles',
-  //       href: '/blog/posts'
-  //     },
-      // topics: {
-      //   title: 'Blog Topics & Tags',
-      //   href: '/blog/tags'
-      // },
-      // rss: {
-      //   title: 'RSS Feed ↗',
-      //   href: '/rss.xml',
-      //   newWindow: true
-      // },
-
-
-  // projects: {
-  //   type: 'page',
-  //   title: 'Projects',
-  //   theme: {
-  //     breadcrumb: true,
-  //     footer: true,
-  //     sidebar: true,
-  //     toc: true,
-  //   }
-  // },
   about: {
     type: 'page',
     title: 'About Us',
@@ -88,8 +28,4 @@ export default {
       timestamp: false,
     }
   }
-  // blog: {
-  //   type: 'page',
-  //   display: 'hidden'
-  // }
 }
