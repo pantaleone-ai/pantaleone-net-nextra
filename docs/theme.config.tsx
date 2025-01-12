@@ -37,10 +37,7 @@ const config: DocsThemeConfig = {
     const config = useConfig()
     const { route } = useRouter()
     const isDefault = route === '/' || !config.title
-    const image =
-      'https://pantaleone.net/' +
-      (isDefault ? 'og.jpeg' : `/og?title=${config.title}`)
-
+    const image = '/android-chrome-512x512.png'
     const description =
       config.frontMatter.description ||
       'The latest in AI-enabled art, design, workflow and business'
@@ -50,15 +47,19 @@ const config: DocsThemeConfig = {
       <>
         <title>{title}</title>
         <meta property="og:title" content={title} />
+        <meta name="og:url" content="https://pantaleone.net" />
         <meta name="description" content={description} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={image} />
-
+        <meta property="og:site_name" content={title}/>
         <meta name="msapplication-TileColor" content="#000" />
         <meta httpEquiv="Content-Language" content="en" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site:domain" content="nextra.site" />
-        <meta name="twitter:url" content="Pantaleone.net" />
+        <meta name="twitter:card" content="/android-chrome-512x512.png" />
+        <meta property="twitter:title" content={title} />
+        <meta property="twitter:description" content={description} />
+        <meta name="twitter:site:domain" content="Pantaleone.net" />
+        <meta name="twitter:url" content="https://pantaleone.net" />
+        <meta property="twitter:card" content={image} />
         <meta name="apple-mobile-web-app-title" content="Pantaleone.net" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="icon" href="/favicon.png" type="image/png" />
