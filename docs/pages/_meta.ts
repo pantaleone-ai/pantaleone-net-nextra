@@ -38,12 +38,12 @@ export default {
   // },
   blog: {
     title: 'Blog',
-    theme: {
-      breadcrumb: true,
-      footer: true,
-      sidebar: true,
-      layout: 'article'
-    }
+    // theme: {
+    //   breadcrumb: true,
+    //   footer: true,
+    //   sidebar: true,
+    //   layout: 'article'
+    // }
   },
   //   items: {
   //     blogindex: {
