@@ -88,7 +88,7 @@ export default {
     theme: {
       timestamp: false,
     }
-  },
+  }
   // blog: {
   //   type: 'page',
   //   display: 'hidden'
