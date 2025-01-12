@@ -36,7 +36,7 @@ export default {
   //     },
   //   },
   // },
-  Blog: {
+  blog: {
     type: 'menu',
     title: 'Blog',
     theme: {
@@ -49,7 +49,7 @@ export default {
     items: {
       blogindex: {
         title: 'Latest Articles',
-        href: '/blog'
+        href: '/blog/posts'
       },
       // topics: {
       //   title: 'Blog Topics & Tags',
