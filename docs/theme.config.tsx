@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router'
 import type { DocsThemeConfig } from 'nextra-theme-docs'
-import { Link, useConfig } from 'nextra-theme-docs'
-import { Button } from 'nextra/components'
+import { useConfig } from 'nextra-theme-docs'
+// import { Button } from 'nextra/components'
 
 const logo = (
   <>
