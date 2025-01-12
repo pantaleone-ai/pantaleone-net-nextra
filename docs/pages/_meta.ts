@@ -9,7 +9,7 @@ export default {
       sidebar: true,
       toc: true,
       layout: 'raw'
-    }
+    },
   },
   // shop: {
   //   title: 'Shop',
@@ -37,7 +37,6 @@ export default {
   //   },
   // },
   blog: {
-    type: 'menu',
     title: 'Blog',
     theme: {
       breadcrumb: true,
@@ -45,12 +44,13 @@ export default {
       sidebar: true,
       toc: true,
       layout: 'article'
-    },
-    items: {
-      blogindex: {
-        title: 'Latest Articles',
-        href: '/blog/posts'
-      },
+    }
+  },
+  //   items: {
+  //     blogindex: {
+  //       title: 'Latest Articles',
+  //       href: '/blog/posts'
+  //     },
       // topics: {
       //   title: 'Blog Topics & Tags',
       //   href: '/blog/tags'
@@ -60,8 +60,8 @@ export default {
       //   href: '/rss.xml',
       //   newWindow: true
       // },
-    }
-  },
+
+
   // projects: {
   //   type: 'page',
   //   title: 'Projects',
