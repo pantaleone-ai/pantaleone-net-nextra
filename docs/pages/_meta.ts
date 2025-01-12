@@ -42,7 +42,6 @@ export default {
       breadcrumb: true,
       footer: true,
       sidebar: true,
-      toc: true,
       layout: 'article'
     }
   },
