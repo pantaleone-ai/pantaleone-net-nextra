@@ -22,13 +22,13 @@ export default withNextra({
     // ESLint behaves weirdly in this monorepo.
     ignoreDuringBuilds: true
   },
-  redirects: async () => [
-    {
-      source: '/blog',
-      destination: '/blog/index.mdx',
-      permanent: true
-    }
-  ],
+  // redirects: async () => [
+  //   {
+  //     source: '/blog',
+  //     destination: '/blog/index.mdx',
+  //     permanent: true
+  //   }
+  // ],
   webpack(config) {
     const fileLoaderRule = config.module.rules.find(rule =>
       rule.test?.test?.('.svg')

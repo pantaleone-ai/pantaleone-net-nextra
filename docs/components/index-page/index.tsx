@@ -482,7 +482,7 @@ export const IndexPage = () => (
                 mixBlendMode: 'difference'
               }}
             >
-              adaptive to<br />
+              we adapt to<br />
               any <br />
               situation
             </motion.h3>
@@ -505,7 +505,7 @@ export const IndexPage = () => (
           >
             <h3>
               We create experiences that<br />
-              scale to support your customers needs.
+              scale to support every marketing channel.
             </h3>
           </Feature>
         </Features>
