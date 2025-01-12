@@ -87,8 +87,13 @@ const config: DocsThemeConfig = {
     forcedTheme: 'dark',
   },
 
+  toc: {
+    extraContent: true,
+    backToTop: true,
+  },
+
   editLink: {
-    content: 'Edit this page on GitHub →'
+    // content: 'Edit this page on GitHub →'
   },
   // feedback: {
   //   content: 'Question? Give us feedback →',
